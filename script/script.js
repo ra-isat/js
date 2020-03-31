@@ -22,7 +22,7 @@ money = prompt('Ваш месячный доход?', '50000');
 addExpenses = prompt('Перечислите возможные расходы за рассчитываемый период через запятую')
 addExpenses = addExpenses.toLowerCase();
 addExpenses = addExpenses.split(', ');
-console.log(addExpense);
+console.log(addExpenses);
 
 deposit = confirm('Есть ли у вас депозит в банке?');
 console.log(deposit);
