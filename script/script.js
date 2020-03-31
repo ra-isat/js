@@ -20,7 +20,9 @@ console.log(budgetDay);
 
 money = prompt('Ваш месячный доход?', '50000');
 addExpenses = prompt('Перечислите возможные расходы за рассчитываемый период через запятую')
-console.log(addExpenses.split(', '));
+addExpenses = addExpenses.toLowerCase();
+addExpenses = addExpenses.split(', ');
+console.log(addExpense);
 
 deposit = confirm('Есть ли у вас депозит в банке?');
 console.log(deposit);
