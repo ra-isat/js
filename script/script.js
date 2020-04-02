@@ -26,13 +26,13 @@ let amount1 = prompt('Во сколько это обойдется?');
 let expenses2 = prompt('Введите обязательную статью расходов?');
 let amount2 = prompt('Во сколько это обойдется?');
 
-
-
-
-let getExpensesMonth = function(amount1, amount2) {
-    return amount1 + amount2;
+let sumAmont = function(amount1, amount2) {
+    return +amount1 + +amount2;
 }
-console.log('Обязательные расходы: ' + getExpensesMonth(+amount1, +amount2));
+let getExpensesMonth = function(sumAmont) {
+    return sumAmont;
+}
+console.log('Обязательные расходы: ' + getExpensesMonth(sumAmont));
 
 let getAccumulatedMonth = function(money, amount1, amount2) {
     return (money - (+amount1 + (+amount2)));
